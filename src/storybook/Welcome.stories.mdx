@@ -1,0 +1,37 @@
+import { Meta } from "@storybook/addon-docs";
+import StoryBox from "./StoryBox";
+import citydaoBackground from "./assets/citydao-background.png";
+
+<style>{`
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: url(${citydaoBackground});
+    background-size: cover;
+    min-height: 25vh;
+
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+  }
+`}</style>
+
+<Meta title="Welcome" />
+
+<StoryBox className="box">
+  <h1 class="title">
+    CityDAO React
+    <br />
+    Component Library
+  </h1>
+</StoryBox>
+
+## Changelog
